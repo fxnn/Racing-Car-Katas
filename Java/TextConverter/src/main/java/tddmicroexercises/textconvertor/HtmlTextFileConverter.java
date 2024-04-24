@@ -14,15 +14,14 @@ public class HtmlTextFileConverter {
   public String convertToHtml() throws IOException {
 
     BufferedReader reader = new BufferedReader(new FileReader(fullFilenameWithPath));
+    HtmlTextBuilder result = new HtmlTextBuilder();
 
     String line = reader.readLine();
-    String html = "";
     while (line != null) {
-      html += StringEscapeUtils.escapeHtml(line);
-      html += "<br />";
+      result.appendLine(line);
       line = reader.readLine();
     }
-    return html;
+    return result.asString();
 
   }
 
