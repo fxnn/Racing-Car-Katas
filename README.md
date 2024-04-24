@@ -44,7 +44,12 @@ If you do, you are free to use the mocking tool that you prefer.
    The Sensor class provided for the exercise fakes the behaviour of a real tire sensor, 
    providing random but realistic values.
 
-2. **HtmlTextConverter exercise**: write the unit tests for the HtmlTextConverter class. The ToHtmlTextConverter class is designed to reformat a plain text file for display in a browser. For the Python and Java versions, there is an additional class "HtmlPagesConverter" which is slightly harder to get under test. It not only converts text in a file to html, it also supports pagination. It's meant as a follow up exercise.
+2. **HtmlTextConverter exercise**: write the unit tests for the HtmlTextConverter class. 
+   The HtmlTextConverter class is designed to reformat a plain text file for display in a browser. 
+   For the Python and Java versions, there is an additional class "HtmlPagesConverter" which is slightly harder to 
+   get under test. 
+   It not only converts text in a file to html, it also supports pagination. 
+   It's meant as a follow up exercise.
 
 3. **TicketDispenser exercise**: write the unit tests for the TicketDispenser. The TicketDispenser class is designed to be used to manage a queuing system in a shop. There may be more than one ticket dispenser but the same ticket should not be issued to two different customers.
 
